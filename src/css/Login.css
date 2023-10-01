@@ -1,0 +1,102 @@
+/* login styles.................... */
+.Login {
+    /* width: 100%; */
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: url('../images/logo.jpg');
+    background-position: center;
+    background-size: contain;
+   
+}
+
+
+
+
+
+.Login .LoginForm {
+    overflow: auto;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(64, 44, 48, 0.502);
+    border-radius: 5px;
+    width: 300px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.LoginInner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#InputPasswordId,
+#InputEmailId {
+    color: white !important;
+    min-width: 12em;
+    padding: 15px;
+    font-size: 1em;
+    /* background-color: transparent; */
+    background-color: rgba(0, 0, 0, 0.263);
+}
+
+
+
+
+/*Input placeholder displacement */
+.user-input-wrp {
+    position: relative;
+    width: 50%;
+}
+
+.user-input-wrp .inputText {
+    width: 100%;
+    outline: none;
+    border: none;
+    /* border-bottom: 1px solid #777; */
+    border-bottom: 1px solid white;
+    box-shadow: none !important;
+}
+
+.user-input-wrp .inputText:focus {
+    border-color: blue;
+    border-width: medium medium 2px;
+}
+
+.user-input-wrp .floating-label {
+    position: absolute;
+    pointer-events: none;
+
+    top: 35px;
+    /* top:18px; */
+    left: 10px;
+    transition: 0.2s ease all;
+}
+
+.user-input-wrp input:focus~.floating-label,
+.user-input-wrp input:not(:focus):valid~.floating-label {
+    /* top:0px */
+    top: 20px;
+    /* left:10px */
+    left: 2px;
+    font-size: 13px;
+    opacity: 1;
+}
+
+.LoginCancelBtns {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    height: 50px;
+}

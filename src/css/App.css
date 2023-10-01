@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.App {
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+
+.Title {
+  font-size: 1.9rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: crimson;
+}
+
+
+.Image_DescriptionDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.ImageLogo img {
+  width: 100%;
+  height: 45vh;
+}
+
+
+.About {
+  font-size: 1.2rem;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 3px;
+  background-color: rgba(223, 215, 215, 0.202);
+}
+
+.SliderView {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+.Footer {
+
+  background-color: rgba(0, 0, 0, 0.845);
+  height: 20vh;
+  color: white;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2px;
+
+}
+
+.Weblink {
+  width: 100%;
+  text-align: center;
+
+}
