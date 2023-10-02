@@ -1,22 +1,19 @@
+.Header {
+ 
+  height: 20vh;
 
- .Header {
-   position: relative;
-  
-  }
+}
 
-  
-  .PastryMenu {
-    height: 100%;
-    width: 98%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  
+._PastryMenu {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  margin-bottom: 300px;
 
-    position: absolute;
-    top: -4px;
-   
-  }
-  .DropdownUl{
-    background-color:rgba(245, 245, 245, 0.997) !important;
-  }
+}
+
+
+
+.DropdownUl {
+  background-color: rgba(245, 245, 245, 0.997) !important;
+}

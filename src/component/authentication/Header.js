@@ -31,22 +31,50 @@ function Header() {
   const AlmondOats = () => {
     navigate("/AlmondOats")
   }
+
+  const hidescroll = () => {
+    let i = 1;
+    if (i == 1) {
+      const _Home = document.getElementsByTagName("body")[0];
+      _Home.style.overflow = "hidden";
+      i = -1;
+      return
+    }
+  }
+  setInterval(()=>{
+    let overlayHidden = document.querySelector(".bm-menu-wrap");
+    if (overlayHidden.getAttribute("hidden") === "true") {
+      document.getElementsByTagName("body")[0].style.overflow = "scroll";
+    }
+  },500)
+
+
+  // let activateScroll = document.querySelector("body");
+
+  // ['click','mouseover','wheel','hover'].forEach(evt =>{
+   
+  //   activateScroll.addEventListener(evt,()=>{
+
+  //     let overlayHidden = document.querySelector(".bm-menu-wrap");
+  //     if (overlayHidden.getAttribute("hidden") === "true") {
+  //       document.getElementsByTagName("body")[0].style.overflow = "scroll";
+  //       // console.log("overflow activated");
+  //     }
+
+  //   },false)
+    
+  // });
+
+
   return (
     <>
       <header className='Header'>
 
-
-        <nav id="outer-container">
+        <nav id="outer-container" onClick={hidescroll}>
           <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
         </nav>
 
-        
-        <br />
-        <br />
-        <br />
-
-
-        <div className='PastryMenu'>
+        <div className='_PastryMenu'>
           <nav className="dropdown ">
             <button className="btn btn-outline-secondary dropdown-toggle DropdownBtn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
               <b className='fw-bold'>Pastry</b>
@@ -96,6 +124,7 @@ function Header() {
             </ul>
           </nav>
         </div>
+
 
 
       </header>

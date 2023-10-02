@@ -19,7 +19,7 @@ import Products from './Products';
 
 function _Router() {
     return (
-        <>
+        <div className='Router'>
             <BrowserRouter>
                 <Header />
                 <Routes>
@@ -46,7 +46,7 @@ function _Router() {
 
 
             </BrowserRouter>
-        </>
+        </div>
     )
 }
 

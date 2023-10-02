@@ -9,25 +9,24 @@ export default props => {
   return (
     <Menu>
       <a className="menu-item fw-bold" href="/">
-        <span className='btn btn-outline-light fw-bold'>
+        <b className='btn btn-outline-light fw-bold'>
           Home
-        </span>
+        </b>
       </a>
 
       <a className="menu-item fw-bold" href='/contactUs'>
-        <span className='btn btn-outline-light fw-bold'>
+        <b className='btn btn-outline-light fw-bold'>
           Contact us
-        </span>
+        </b>
       </a>
 
       <a className="menu-item fw-bold" href='/Products'>
-        <span className='btn btn-outline-light fw-bold'>
+        <b className='btn btn-outline-light fw-bold'>
           Products
-        </span>
+        </b>
       </a>
 
-
-      <br />
+      <hr />
       <a className=" menu-item " href='/loginpage'>
         <b className='btn btn-outline-light fw-bold'>
           Manage Acccount
